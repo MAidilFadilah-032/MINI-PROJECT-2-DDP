@@ -195,7 +195,8 @@ Dan opsi terakhir adalah keluar, jika user menekan keluar maka program akan lang
 
 ============================================================================================
 
-<img width="1170" height="723" alt="Screenshot 2025-09-28 184418" src="https://github.com/user-attachments/assets/29ca7e7c-0c0a-4bb3-8c84-2bd5fbc001b6" />
+<img width="1155" height="712" alt="Screenshot 2025-09-28 203230" src="https://github.com/user-attachments/assets/46df8f4c-b8e5-49d3-9442-57644acc3839" />
+
 
 Pada bagian pertama flowchart kita mulai memasukan username dan password.
 
