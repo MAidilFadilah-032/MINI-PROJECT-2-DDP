@@ -166,5 +166,12 @@ except IndexError: = Menangani kesalahan jika indeks yang dimasukkan di luar jan
 
 except TypeError: = Menangani kesalahan jika ada operasi yang dilakukan pada tipe data yang salah.
 
-==================================================================================================================================================================================================================
+============================================================================================
+
+<img width="1229" height="719" alt="Screenshot 2025-09-28 165402" src="https://github.com/user-attachments/assets/27b361c0-8e14-4e97-a5df-a77f6aff0761" />
+
+
+
+
+
 
