@@ -14,7 +14,7 @@ def login():
             print("Login berhasil!")
             return data_pengguna[username]["role"]
         else:
-            print("Username atau password salah. Coba lagi.")
+            print("Username atau password salah. Coba  masukan username & password yang valid.")
 
 def tambah_peserta():
     print("--- Tambah Peserta ---")
@@ -117,7 +117,7 @@ while True:
             print("6. Keluar Program")
             
             try:
-                pilihan = int(input("Pilih menu (1-6): "))
+                pilihan = int(input("Pilih opsi (1-6): "))
                 if pilihan == 1:
                     tambah_peserta()
                 elif pilihan == 2:
@@ -130,7 +130,7 @@ while True:
                     print("Anda telah logout.")
                     break  
                 elif pilihan == 6:
-                    print("Terima kasih, sampai jumpa!")
+                    print("Terima kasih dan sampai jumpa")
                     exit() 
                 else:
                     print("Pilihan tidak valid. Silakan coba lagi.")
@@ -158,7 +158,7 @@ while True:
                     print("Anda telah logout.")
                     break  
                 elif pilihan == 3:
-                    print("Terima kasih, sampai jumpa!")
+                    print("Terima kasih dan sampai jumpa")
                     exit()
                 else:
                     print("Pilihan tidak valid. Silakan coba lagi.")
@@ -171,4 +171,5 @@ while True:
             except IndexError:
                 print("Indeks tidak valid.")
             except TypeError:
+
                 print("Input tidak valid.")
