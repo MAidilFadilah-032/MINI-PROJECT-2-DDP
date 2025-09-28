@@ -168,7 +168,8 @@ except TypeError: = Menangani kesalahan jika ada operasi yang dilakukan pada tip
 
 ============================================================================================
 
-<img width="2306" height="1421" alt="FLOWCHART_MINPRO_2 drawio" src="https://github.com/user-attachments/assets/137a3d3a-4844-4d83-9e33-167fa418ab73" />
+<img width="2306" height="1421" alt="FLOWCHART drawio" src="https://github.com/user-attachments/assets/4c251650-66d0-4f2b-8f89-2b4febd242c1" />
+
 
 
 
