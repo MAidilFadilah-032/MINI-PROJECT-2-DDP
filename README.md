@@ -26,7 +26,7 @@ else:= Blok kode yang dijalankan jika kondisi pengecekan login gagal.
 
 print("Username atau password salah. Coba lagi.") = Mencetak pesan kegagalan, dan perulangan akan kembali ke awal.
 
-Mendeklarasikan fungsi untuk menambahkan entri peserta baru.
+def tambah_peserta(): = Mendeklarasikan fungsi untuk menambahkan entri peserta baru.
 
 print("--- Tambah Peserta ---") = Mencetak judul sub-menu.
 
@@ -68,9 +68,9 @@ peserta = data_peserta_lomba[indeks] = Mengambil kamus data peserta yang akan di
 
 print(f"--- Ubah Data Peserta {peserta['nama']} ---") = Mencetak judul perubahan dengan nama peserta saat ini.
 
-nama_baru = input(...) dst. = Menerima input data baru untuk Nama, Desa, dan Lomba.
+nama_baru = input(...) dan seterusnya. = Menerima input data baru untuk Nama, Desa, dan Lomba.
 
-if nama_baru: peserta['nama'] = nama_baru dst. = Memperbarui nilai dalam kamus peserta hanya jika input data baru tidak kosong (kosong berarti data lama dipertahankan).
+if nama_baru: peserta['nama'] = nama_baru dan seterusnya. = Memperbarui nilai dalam kamus peserta hanya jika input data baru tidak kosong (kosong berarti data lama dipertahankan).
 
 print("Data peserta berhasil diperbarui.") = Mencetak konfirmasi.
 
@@ -124,13 +124,11 @@ while True: = Memulai perulangan Menu Utama; akan terus berjalan sampai logout a
 
 print("="*40) / print("Menu Utama") = Mencetak dekorasi dan judul menu.
 
-if role == "panitia": = Memeriksa peran. Jika panitia, program akan:
-
-Mencetak opsi menu lengkap (1-6).
+if role == "panitia": = Memeriksa peran. Jika panitia, program akan Mencetak opsi menu lengkap (1-6).
 
 try: pilihan = int(input(...)) = Menerima input menu panitia.
 
-if pilihan == 1: tambah_peserta() dst. = Menjalankan fungsi terkait pilihan (Tambah, Lihat, Ubah, Hapus).
+if pilihan == 1: tambah_peserta() dan seterusnya. = Menjalankan fungsi terkait pilihan (Tambah, Lihat, Ubah, Hapus).
 
 elif pilihan == 5: break = Pilihan Logout, keluar dari perulangan menu internal dan kembali ke login().
 
@@ -148,19 +146,17 @@ except IndexError: = Menangani kesalahan jika indeks yang dimasukkan di luar jan
 
 except TypeError: = Menangani kesalahan jika ada operasi yang dilakukan pada tipe data yang salah.
 
-elif role == "peserta":: Memeriksa peran. Jika peserta, program akan:
+elif role == "peserta": = Memeriksa peran. Jika peserta, program akan Mencetak opsi menu terbatas (1-3).
 
-Mencetak opsi menu terbatas (1-3).
+try: pilihan = int(input(...)) = Menerima input menu peserta.
 
-try: pilihan = int(input(...)): Menerima input menu peserta.
+if pilihan == 1: lihat_data() = Menjalankan fungsi Lihat Data.
 
-if pilihan == 1: lihat_data(): Menjalankan fungsi Lihat Data.
+elif pilihan == 2: break = Pilihan Logout.
 
-elif pilihan == 2: break: Pilihan Logout.
+elif pilihan == 3: exit(): = Pilihan Keluar Program.
 
-elif pilihan == 3: exit(): Pilihan Keluar Program.
-
-else: print("Pilihan tidak valid..."): Menangani pilihan angka di luar 1-3.
+else: print("Pilihan tidak valid..."): = Menangani pilihan angka di luar 1-3.
 
 except ValueError: = Menangani kesalahan jika input nomor urut bukan angka.
 
